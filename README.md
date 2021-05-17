@@ -957,8 +957,6 @@ public class BookingModify
     public DateTime To { get; set; }
 ```
 
-### Component
-
 ## Support
 
 If you are having problems, please let us know by [raising a new issue](https://github.com/aldovilardy/CancunHotel-Clean-WebApi/issues/new).
