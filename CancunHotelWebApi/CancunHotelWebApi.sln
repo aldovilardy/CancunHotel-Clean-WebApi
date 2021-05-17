@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.6.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancunHotel.WebApi", "src\CancunHotel.WebApi\CancunHotel.WebApi.csproj", "{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancunHotel.Domain", "src\CancunHotel.Domain\CancunHotel.Domain.csproj", "{02861D32-5B1C-473D-91AF-74A29973EF9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancunHotel.Infrastructure", "src\CancunHotel.Infrastructure\CancunHotel.Infrastructure.csproj", "{58D07ACB-6AD8-4197-8460-397DB8E4D703}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancunHotel.Application", "src\CancunHotel.Application\CancunHotel.Application.csproj", "{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E6AE9115-C15E-492C-8071-5B8B93A4FB15}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		docker-compose.debug.yml = docker-compose.debug.yml
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		wait-for-it.sh = wait-for-it.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|x64.Build.0 = Release|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C99454C-CEF8-4E86-838D-50CF3C86E9EA}.Release|x86.Build.0 = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|x64.Build.0 = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Debug|x86.Build.0 = Debug|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|x64.Build.0 = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{02861D32-5B1C-473D-91AF-74A29973EF9F}.Release|x86.Build.0 = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|x64.Build.0 = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Debug|x86.Build.0 = Debug|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|x64.ActiveCfg = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|x64.Build.0 = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|x86.ActiveCfg = Release|Any CPU
+		{58D07ACB-6AD8-4197-8460-397DB8E4D703}.Release|x86.Build.0 = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|x64.Build.0 = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Debug|x86.Build.0 = Debug|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|x64.ActiveCfg = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|x64.Build.0 = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3888AA3-0032-4EA8-A52C-A9C5C5B286ED}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FF3FE93-99AE-47CA-BF3F-B50953B46775}
+	EndGlobalSection
+EndGlobal

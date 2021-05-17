@@ -1,0 +1,34 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+
+version: '3.4'
+
+services:
+  
+  ms-sql-server:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      - "SA_PASSWORD=My_SecretPassword123"
+      - "ACCEPT_EULA=Y"
+    ports: 
+      - "1433:1433"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "http://localhost:1433", "-U", "sa", "-P", "Pass_word", "-Q", "SELECT 1", "||", "exit 1"]
+
+  cancunhotelwebapi:
+    image: cancunhotelwebapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - "ConnectionStrings__DefaultConnection=Server=ms-sql-server,1433;Initial Catalog=BookingsDb;Persist Security Info=False;User ID=sa;Password=My_SecretPassword123;"
+      - "ASPNETCORE_Kestrel__Certificates__Default__Password=MySecretPassword"
+      - "ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx"
+    volumes:
+      - ~/.aspnet/https:/https:ro
+    ports:
+      - "5000:80"
+      - "5001:443"
+    depends_on:
+      - ms-sql-server
+    entrypoint: ["./wait-for-it.sh", "ms-sql-server:1433", "-t", "150", "--", "dotnet", "CancunHotel.WebApi.dll"]
+    restart: on-failure
