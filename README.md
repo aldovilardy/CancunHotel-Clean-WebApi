@@ -74,7 +74,7 @@ To accomplish the requirements:
         }
         ```
 
-* The API doen't use authentication or roles methods to make it secure but have a rule in modify that permits modify the booking dates only if the email is the same registered orillinaly.
+* The API doen't use authentication or roles methods to make it secure but have a rule in modify that permits modify the booking dates only if the email is the same registered originally.
 
 ## Environment Configurations
 
