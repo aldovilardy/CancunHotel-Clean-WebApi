@@ -63,7 +63,7 @@ To accomplish the requirements:
             "to": "2021-05-14"
         }
         ```
-    * `PUT` /api/Booking/modifyReservation - /api/Booking/modifyReservation
+    * `PUT` /api/Booking/modifyReservation - Modify Reservation: change the values of a pre-existing specific booking.
         * Request body:
         ```json
         {
@@ -74,7 +74,7 @@ To accomplish the requirements:
         }
         ```
 
-* The API doen't use authentication or roles methods to make it secure but have a rule in modify that permits modify the booking dates only if the email is the same registered originally.
+* The API doesn't use authentication or roles methods to make it secure but have a rule in modify that permits modify the booking dates only if the email is the same registered originally.
 
 ## Environment Configurations
 
